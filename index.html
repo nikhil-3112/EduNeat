@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduNeat</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #ECEFF1;
+      }
+      
+      header {
+        background-color: #ECEFF1;
+        color: #4a677a;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+      header .logo {
+        width:28rem;
+        min-height: min-content;  
+        margin: 1rem;
+      }
+      header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+
+      header h1 {
+        margin-left: -75rem;
+        color: green;
+      }
+      
+      header nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size:1.3rem ;
+      }
+      
+      header nav li {
+        margin-right: 1rem;
+      }
+      
+      header nav a {
+        color: #9c1818;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      
+      header nav a:hover {
+        background-color: #444;
+      }
+      
+      main {
+        padding: 5rem 2rem;
+      }
+      
+      main #edu-image {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* padding: 20rem; */
+        margin-top: 11rem;
+      }
+      
+      main section {
+        margin-top: 3rem;
+      }
+
+      main h2 {
+        font-size: 3rem;
+      }
+      
+      main h2, main h3 {
+        margin-top: 0;
+      }
+      
+      main p {
+        line-height: 1.6;
+        font-size: 1.5rem;
+      }
+      
+      main ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      main li {
+        margin-bottom: 1rem;
+      }
+      
+      main li a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      
+      main li a:hover {
+        color: #444;
+      }
+      
+      footer {
+        background-color: #ecf1ee;
+        color: #0f3b58;
+        padding: 2rem;
+        text-align: center;
+        border: 10rem;
+      }
+      
+      footer .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      footer h3 {
+        margin: 0;
+        margin-right: 1rem;
+      }
+      
+      footer p {
+        margin: 0;
+        margin-right: 1rem;
+      }
+      
+      footer ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+
+      footer ul .social-icon {
+          width : 2rem;
+          height: 2rem;
+          fill: currentColor;
+      }
+      
+      footer li {
+        margin-right: 1rem;
+      }
+      
+      footer a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      
+      footer a:hover {
+        color: #ccc;
+      }
+      
+      @media (max-width: 768px) {
+        header {
+          padding: 1rem;
+        }
+      
+        header nav {
+          display: none;
+        }
+      
+        header .container {
+          justify-content: center;
+        }
+      
+        main {
+          padding: 3rem 1rem;
+        }
+      
+        main #eduimage {
+          width: 100%;
+        }
+      
+        footer {
+          padding: 1rem;
+        }
+      
+        footer .container {
+          flex-direction: column;
+        }
+      }
+              </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="D:\EduNeat\Picture1.png" class="logo" alt="Edu-Connect Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="sign_in.html" id="loginbtn">Sign In</a></li>
+                    <li><a href="sign_up.html" id="signupbtn">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>   
+    </header>
+    <main>
+        <img src="EduNeat-image.png" alt="EduNeat image" id="edu-image">
+        <section>
+            <h2>What is EduNeat?</h2>
+            <p>
+                At EduNeat, we are passionate about advancing education and breaking down barriers to learning for all individuals, regardless of their background or circumstances. Our mission is rooted in the belief that quality education is a fundamental right, not a privilege.
+                Through innovative technology solutions and a commitment to excellence, we have created a comprehensive web-based platform that serves as a gateway to a world of knowledge and opportunities. With a focus on inclusivity and equity, we provide learners with access to interactive lessons, virtual tutoring services, and a diverse range of educational resources.
+                Driven by the United Nations' Sustainable Development Goal 4: Quality Education, we strive to empower learners to reach their full potential and contribute meaningfully to society. Together, let's embark on a journey of lifelong learning and empowerment with EduNeat.
+            </p>
+        </section>
+        <section>
+            <h3>Quicklinks</h3>
+            <ul>
+                <li><a href="https://www.education.gov.uk/sch">School Leaving Certificate</a></li>
+                <li><a href="http://www.ncad.ie/qualifications/">NCAD Qualifications</a></li>
+                <li><a href="https://www.gov.uk/government/organisations">UK Government Organisations</a></li>
+                <li><a href="#">Blank 1</a></li>
+                <li><a href="#">Blank 2</a></li>
+                <li><a href="#">Blank 3</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <h3>EduNeat</h3>
+            <p>&copy; 2024 - All Rights Reserved</p>
+            <ul>
+                <li><a href="#blank" class="social-icon"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#blank" class="social-icon"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="#blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/5a640b4ad7.js" crossorigin="anonymous"></script>
+</body>
+</html>

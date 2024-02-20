@@ -1,0 +1,65 @@
+* {
+   background-color: #ECEFF1; 
+   align-items: center;
+}
+
+.header-class {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: #4CAF50; /* Green */
+
+}
+
+#eduimage {
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    margin-left: 35%;
+}
+
+#login_form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ccc;
+    border: 1px solid #666;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.f1_label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.f1_input {
+    width: 200px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.f1_submit {
+    width: 100px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.f1_submit:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduConnect with APIs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.apiContent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.apiContent div {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to EduConnect</h1>
+        <input type="text" id="searchInput" placeholder="Search...">
+        <select id="categorySelect">
+            <option value="all">All Categories</option>
+            <option value="languageLearning">Language Learning</option>
+            <option value="stemEducation">STEM Education</option>
+            <option value="artsHumanities">Arts & Humanities</option>
+            <option value="historySocialStudies">History & Social Studies</option>
+            <option value="healthWellness">Health & Wellness</option>
+        </select>
+        <button onclick="sortContent()">Sort A-Z</button>
+    </header>
+    <main>
+        <section id="languageLearning">
+            <h2>Language Learning</h2>
+            <div id="languageLearningContent" class="apiContent"></div>
+        </section>
+        <section id="stemEducation">
+            <h2>STEM Education</h2>
+            <div id="stemEducationContent" class="apiContent"></div>
+        </section>
+        <section id="artsHumanities">
+            <h2>Arts & Humanities</h2>
+            <div id="artsHumanitiesContent" class="apiContent"></div>
+        </section>
+        <section id="historySocialStudies">
+            <h2>History & Social Studies</h2>
+            <div id="historySocialStudiesContent" class="apiContent"></div>
+        </section>
+        <section id="healthWellness">
+            <h2>Health & Wellness</h2>
+            <div id="healthWellnessContent" class="apiContent"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 EduConnect. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+const apiContent = {
+    languageLearning: [
+        { name: "Duolingo", description: "Learn languages interactively with personalized lessons." },
+        { name: "Memrise", description: "Use flashcards and spaced repetition to learn new languages." },
+        { name: "Rosetta Stone", description: "Immerse yourself in language learning through interactive activities." }
+    ],
+    stemEducation: [
+        { name: "Khan Academy", description: "Access free online courses and lessons in math, science, and more." },
+        { name: "Codecademy", description: "Learn to code interactively with courses in various programming languages." },
+        { name: "Scratch", description: "Create stories, games, and animations while learning programming concepts." }
+    ],
+    artsHumanities: [
+        { name: "Coursera", description: "Enroll in online courses from universities and institutions worldwide." },
+        { name: "edX", description: "Take online courses in humanities subjects from top universities." },
+        { name: "Kahoot!", description: "Engage students with interactive quizzes and games on various topics." }
+    ],
+    historySocialStudies: [
+        { name: "National Geographic Education", description: "Access resources for teaching and learning about geography, history, and more." },
+        { name: "BBC Bitesize", description: "Find educational content and revision materials for various subjects." },
+        { name: "TED-Ed", description: "Explore educational videos and lessons on a wide range of topics." }
+    ],
+    healthWellness: [
+        { name: "MyFitnessPal", description: "Track your diet and exercise to achieve health and wellness goals." },
+        { name: "Headspace", description: "Practice mindfulness and meditation for mental well-being." },
+        { name: "Fitbit API", description: "Access data from Fitbit devices to monitor physical activity and sleep patterns." }
+    ]
+};
+
+// Define your API keys
+const apiKey1 = '5f97fe8619msh91b28be0207b647p1ea022jsn34f9bc736428';
+const apiKey2 = 'YOUR_API_KEY_2';
+const apiKey3 = 'YOUR_API_KEY_3';
+const apiKey4 = '5f97fe8619msh91b28be0207b647p1ea022jsn34f9bc736428';
+const apiKey5 = 'YOUR_API_KEY_5';
+
+// Define API URLs
+const apiUrl1 = `https://periodictable.p.rapidapi.com/`;
+const apiUrl2 = `https://api.example.com/data2?key=${apiKey2}`;
+const apiUrl3 = `https://api.example.com/data3?key=${apiKey3}`;
+const apiUrl4 = `https://musicapp8.p.rapidapi.com/`;
+const apiUrl5 = `https://api.example.com/data5?key=${apiKey5}`;
+
+// Fetch data from API 1
+fetch(apiUrl1)
+  .then(response => response.json())
+  .then(data => {
+    // Process data from API 1
+  })
+  .catch(error => {
+    console.error('Error fetching data from API 1:', error);
+  });
+
+// Fetch data from API 2
+fetch(apiUrl2)
+  .then(response => response.json())
+  .then(data => {
+    // Process data from API 2
+  })
+  .catch(error => {
+    console.error('Error fetching data from API 2:', error);
+  });
+
+// Fetch data from API 3
+fetch(apiUrl3)
+  .then(response => response.json())
+  .then(data => {
+    // Process data from API 3
+  })
+  .catch(error => {
+    console.error('Error fetching data from API 3:', error);
+  });
+
+// Fetch data from API 4
+fetch(apiUrl4)
+  .then(response => response.json())
+  .then(data => {
+    // Process data from API 4
+  })
+  .catch(error => {
+    console.error('Error fetching data from API 4:', error);
+  });
+
+// Fetch data from API 5
+fetch(apiUrl5)
+  .then(response => response.json())
+  .then(data => {
+    // Process data from API 5
+  })
+  .catch(error => {
+    console.error('Error fetching data from API 5:', error);
+  });
+
+
+// Function to generate HTML for displaying API content
+function generateApiList(apiCategory) {
+    const apiList = apiContent[apiCategory].map(api => `
+        <div class="api-item">
+            <h3>${api.name}</h3>
+            <p>${api.description}</p>
+        </div>
+    `).join('');
+
+    document.getElementById('api-list').innerHTML = apiList;
+}
+
+// Function to handle search functionality
+function searchApi() {
+    const searchTerm = document.getElementById('search-input').value.toLowerCase();
+    const selectedCategory = document.getElementById('category-select').value;
+    
+    const filteredApis = apiContent[selectedCategory].filter(api =>
+        api.name.toLowerCase().includes(searchTerm) || api.description.toLowerCase().includes(searchTerm)
+    );
+
+    generateApiList(selectedCategory, filteredApis);
+}
+
+// Function to initialize the page
+function initializePage() {
+    // Populate category select options
+    const categorySelect = document.getElementById('category-select');
+    for (const category in apiContent) {
+        const option = document.createElement('option');
+        option.value = category;
+        option.textContent = category.replace(/([A-Z])/g, ' $1').trim(); // Add space before capital letters
+        categorySelect.appendChild(option);
+    }
+
+    // Add event listeners
+    document.getElementById('search-input').addEventListener('input', searchApi);
+    document.getElementById('category-select').addEventListener('change', () => generateApiList(categorySelect.value));
+
+    // Initialize with the first category
+    generateApiList(Object.keys(apiContent)[0]);
+}
+
+// Call initializePage when the DOM content is loaded
+document.addEventListener('DOMContentLoaded', initializePage);
+
+    </script>
+</body>
+</html>
