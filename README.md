@@ -1,3 +1,7 @@
+
+
+![Picture2](https://github.com/nikhil-3112/EduNeat/assets/98270496/4e3ff1fc-c7b6-48a6-b4ce-9ce3d437d5df)
+
 ## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
