@@ -88,7 +88,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Feel free to customize this guidance according to your project's specific requirements and dependencies. Let me know if you need further assistance!
-
-EduNeat 
-© 2024 - All Rights Reserved
+EduNeat © 2024 - All Rights Reserved
