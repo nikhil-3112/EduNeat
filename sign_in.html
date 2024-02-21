@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <style>
+        #login_form {
+            width: 300px;
+            margin: 0 auto;
+}
+
+.f1_label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.f1_input {
+    width: 100%;
+    padding: 10px;
+}
+
+.f1_submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.f1_submit:hover {
+    background-color: #45a049;
+}
+    </style>
+</head>
+<body>
+    <div id="login_form">
+        <form name="f1" method="post" action="login.php" id="loginForm">
+            <label for="username" class="f1_label">User Name :</label>
+            <input type="text" name="username" value="" id="username" class="f1_input" />
+    
+            <label for="password" class="f1_label">Password  :</label>
+            <input type="password" name="password" value="" id="password" class="f1_input" />
+    
+            <input type="submit" name="login" value="Log In" class="f1_submit" />
+        </form>
+    </div>
+</body>
+</html>
