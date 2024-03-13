@@ -31,25 +31,6 @@ cd EduNeat
 npm install
 ```
 
-### Configuration
-
-Before running the application, you need to configure the API keys for the required services. Follow these steps:
-
-1. Create accounts and obtain API keys for the following services:
-   - [Google Cloud Platform](https://cloud.google.com/)
-   - [Google Classroom API](https://developers.google.com/classroom)
-   - [Google Translate API](https://cloud.google.com/translate)
-
-2. Create a `.env` file in the root directory of the project.
-
-3. Add the following environment variables to the `.env` file and replace `YOUR_API_KEY` with your actual API keys:
-
-```
-GOOGLE_CLOUD_API_KEY=YOUR_API_KEY
-GOOGLE_CLASSROOM_API_KEY=YOUR_API_KEY
-GOOGLE_TRANSLATE_API_KEY=YOUR_API_KEY
-```
-
 ### Running the Application
 
 Once you've completed the installation and configuration steps, you can run the application locally using the following command:
